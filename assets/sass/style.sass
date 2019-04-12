@@ -7,7 +7,6 @@ $secondary-color: hsl(265, 100%, 66%) // Violet
 $LightGrayishBlue: hsl(214, 64%, 98%)
 $MidGrayishBlue: hsl(208, 11%, 55%)
 $VeryDarkCyan: hsl(192, 100%, 9%)
-
 $heading-font: 'Poppins', sans-serif
 // Weights:400, 600, 700
 // Body and Call to Action Fonts
@@ -15,7 +14,6 @@ $body-font:'Open Sans', sans-serif
 $body-font-size: 18px
 $body-weight: 400
 // weight 400
-
 $break-small: 375px
 $break-large: 1440px
 
@@ -31,6 +29,8 @@ h1
 p
 	font-size: $body-font-size
 	font-weight: $body-weight
+	font-family: $heading-font
+	color: $MidGrayishBlue
 
 
 header
@@ -44,7 +44,7 @@ header
 
 .btn 
 	border-radius: 2px
-	box-shadow: 0px 0px 5px black
+	box-shadow: 0px 0px 5px $MidGrayishBlue
 	border: none
 	padding: 10px
 	display: inline-block
@@ -60,13 +60,14 @@ header
 		color: white
 
 .mockup
-	height:300px
+	max-height:300px
+	max-width:530px
 	&-main 
 		margin: 25px auto
 		display: block
+	&-users 
+		margin: 120px
 	
-
-
 .banner__content
 	display: flex
 	flex-direction: column
@@ -81,10 +82,20 @@ header
 .users
 	display: flex
 
+.cta
+	width: 700px
+	margin: 150px auto 50px auto
+	border-radius: 5px
+	padding:  50px 0px 50px 0px
+	text-align: center
+	box-shadow: 0px 8px 10px 0px $MidGrayishBlue
+	& > *
+		margin-bottom: 20px
 
-
-.users__content__item
-	margin-top: 30px
+.users__content
+	margin-top: 50px
+	&__item
+	margin-bottom: 20px
 
 
 .main-footer
@@ -97,16 +108,37 @@ header
 		padding: 10px
 		margin-top: 55px
 		margin-bottom: 100px
-	.pages-list 
+	.pages-list
+		display: flex
 		ul
+			flex-basis: 50%
+			padding:20px
 			li
 				list-style: none
+				margin-top: 10px
 
-
+.footer__newsletter
+	&__form
+		display: flex
+		flex-direction: column
+		h2
+			text-transform: uppercase
+			letter-spacing: 2px
+		p
+			margin-top: 10px 
+		input
+			align-items: flex-end
+			padding: 10px
+			border: none
+			margin-top: 10px
+			border-radius: 5px
+		button
+			margin-top: 10px
 
 .footer
-
 	&__icon
+		p
+			font-size: $body-font-size
 		font-size: 30px
 		margin: 10px 15px
 

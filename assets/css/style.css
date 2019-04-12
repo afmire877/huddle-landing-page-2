@@ -12,6 +12,8 @@ h1 {
 p {
   font-size: 18px;
   font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #808d99;
 }
 
 header {
@@ -27,7 +29,7 @@ header {
 
 .btn {
   border-radius: 2px;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 5px #808d99;
   border: none;
   padding: 10px;
   display: inline-block;
@@ -48,11 +50,15 @@ header {
 }
 
 .mockup {
-  height: 300px;
+  max-height: 300px;
+  max-width: 530px;
 }
 .mockup-main {
   margin: 25px auto;
   display: block;
+}
+.mockup-users {
+  margin: 120px;
 }
 
 .banner__content {
@@ -73,10 +79,22 @@ header {
   display: flex;
 }
 
-.users__content__item {
-  margin-top: 30px;
+.cta {
+  width: 700px;
+  margin: 150px auto 50px auto;
+  border-radius: 5px;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  box-shadow: 0px 8px 10px 0px #808d99;
+}
+.cta > * {
+  margin-bottom: 20px;
 }
 
+.users__content {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
 .main-footer {
   display: flex;
   background-color: #00252e;
@@ -89,13 +107,46 @@ header {
   margin-top: 55px;
   margin-bottom: 100px;
 }
+.main-footer .pages-list {
+  display: flex;
+}
+.main-footer .pages-list ul {
+  flex-basis: 50%;
+  padding: 20px;
+}
 .main-footer .pages-list ul li {
   list-style: none;
+  margin-top: 10px;
+}
+
+.footer__newsletter__form {
+  display: flex;
+  flex-direction: column;
+}
+.footer__newsletter__form h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer__newsletter__form p {
+  margin-top: 10px;
+}
+.footer__newsletter__form input {
+  align-items: flex-end;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.footer__newsletter__form button {
+  margin-top: 10px;
 }
 
 .footer__icon {
   font-size: 30px;
   margin: 10px 15px;
+}
+.footer__icon p {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
